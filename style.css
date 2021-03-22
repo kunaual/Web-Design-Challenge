@@ -1,0 +1,32 @@
+h1 {
+    /* margin=blank space at the bottom */
+    margin-bottom: 80px;
+    /* Change the size of your font to 60 pixels high. */
+    /* font-size: 60px; */
+    /* change header to cornflower blue. */
+    color: cornflowerblue/* rgb(68, 48, 184);*/
+    
+
+    /* Align the text to the center of its enclosing element (e.g. div). */
+    /* The background of the heading element will now be black. */
+    /* background-color: grey; */
+  }
+  h2 {
+    /* margin=blank space at the bottom */
+    margin-bottom: 60px;
+    color: cornflowerblue
+
+  }
+  .font { font-family: 'Times New Roman', Times, serif;  }
+
+  .navbar {
+    /* margin=blank space at the bottom */
+    margin-bottom: 80px;
+    /* Change the size of your font to 60 pixels high. */
+    /* font-size: 60px; */
+    /* change header to cornflower blue. */
+    color: whitesmoke
+    background-color: cornflowerblue 
+    
+
+  }
