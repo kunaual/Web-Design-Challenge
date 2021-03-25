@@ -65,9 +65,11 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #495057;
+  /* color: #495057; */
+
   text-align: left;
-  background-color: #fff;
+  /* background-color: #fff; aek changed background color */
+  background-color: #495057;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -558,6 +560,22 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+/* aek added this */
+.containerWH,
+.containerWH-fluid,
+.containerWH-sm,
+.containerWH-md,
+.containerWH-lg,
+.containerWH-xl { 
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 35px;  
+  margin-right: auto;
+  margin-left: auto;
+  /* aek adding background color */
+  background-color: white;
 }
 
 @media (min-width: 576px) {
