@@ -1,62 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>fuckf</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="bootstrap.css">
+  <!-- "style.css"> -->
 </head>
+
 <body>
+  <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+    <div class="container">
+      <a href="../" class="navbar-brand">Latitude</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-<!-- code here -->
-<div class="container">
 
-  <!-- Header Bar-->
-  <div class="row">
+      <div class="dropdown show">
+        <a class="navbar-brand dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Dropdown link
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
 
-    <div class=font class="col-md-12">
-      <h1 class=navbar >Header</h1>
-      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+
+
+      <!-- <div class="collapse navbar-collapse" id="navbarResponsive"> -->
+      <!-- <ul class="navbar-nav"> -->
+      <!-- <ul class="navbar-nav right"> -->
+      <!-- below works, except it's a horizontal rather than vertical
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Plots <span class="caret"></span></a>
+            <li><a tabindex="-1" href="#">wtf</a></li>
+            <li><a tabindex="-1" href="#">Another wtf</a></li>
+            <li><a tabindex="-1" href="#">Something wtf here</a></li>
+          </li> -->
+      <!-- below works as verticl list, works on small screen. but on regular screen it's a floating disembodied list,  -->
+      <!-- <li class="dropdown"> -->
+      <!-- this one sort of works, but fucks up the other element in the list -->
+      <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Plots <span
+              class="caret"></span></a> -->
+      <!--     <div class="dropdown-menu " >   show has it visible all the time. aria-labelledby="download"-->
+      <!-- <a class="dropdown-item" href="#">Plot 1</a>
+            <a class="dropdown-item" href="#">Plot 2</a>
+            <a class="dropdown-item" href="#">Plot 3</a>
+            <a class="dropdown-item" href="#">Plot 4</a>
+          </div> -->
+      <!-- </li> -->
+
+  <!-- This div for some reason gets everyting to the right where it should be -->
+    </div>
+    <!-- <li class="nav-item"> -->
+    <a class="nav-link navbar-brand" href="comp.html">Comparison</a>
+    <!-- </li>
+      <li class="nav-item"> -->
+    <a class="nav-link navbar-brand" href="data.html">Data</a>
+    <!-- </li> -->
+    </ul>
+  </div> <!--added as a test-->
+    <!-- wtf is going on here.. why are these here -->
+  </div>
+  </div>
+  </div>
+
+  <div class="container">
+
+    <!-- Header Bar-->
+    <div class="row">
+
+      <div class=font class="col-md-12">
+        <div class=navbar>Latitude>
+          <!-- <div class="dropdown"> -->
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots</a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+            <li><a tabindex="-1" href="#">wtf</a></li>
+            <li><a tabindex="-1" href="#">Another wtf</a></li>
+            <li><a tabindex="-1" href="#">Something wtf here</a></li>
+          </ul>
+          <!-- </div> -->
+        </div>
+        <!-- <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
         <li><a tabindex="-1" href="#">wtf</a></li>
         <li><a tabindex="-1" href="#">Another wtf</a></li>
         <li><a tabindex="-1" href="#">Something wtf here</a></li>
 
-      </ul>
-      <!-- <div class="dropdown">
+      </ul> -->
+        <!-- <div class="dropdown">
         <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
            <li><a tabindex="-1" href="#">Fuck</a></li>
            <li><a tabindex="-1" href="#">Another Fuck</a></li>
          </ul>
       </div> -->
+      </div>
     </div>
-  </div>
 
-  <!-- Second Row -->
-  <div class="row">
+    <!-- Second Row -->
+    <div class="row">
 
 
-    <div class="col-md-8">
-      <!-- class="img-responsive" this doesnt' seem to help -->
-      <img src="Resources/assets/cityLat_vs_MaxTemp.png" 
-         alt="Latitude vs. City Temp graph"  width=210 height=200 > 
+      <div class="col-md-8">
+        <!-- class="img-responsive" this doesnt' seem to help -->
+        <img src="Resources/assets/cityLat_vs_MaxTemp.png" alt="Latitude vs. City Temp graph" width=210 height=200>
 
-    <!-- </div>
+        <!-- </div>
     <div class="col-md-4"> -->
-      <p>As the name ‘old fashioned’ suggests, this whiskey cocktail is a classic cocktail. And for good reason. Made with just a few ingredients, an old fashioned is a balanced cocktail from the 1800s that’s as easy to throw together as it is to customize. We’ll show you how to make an old fashioned cocktail recipe, plus how to customize it.</p>
+        <p>As the name ‘old fashioned’ suggests, this whiskey cocktail is a classic cocktail. And for good reason. Made
+          with just a few ingredients, an old fashioned is a balanced cocktail from the 1800s that’s as easy to throw
+          together as it is to customize. We’ll show you how to make an old fashioned cocktail recipe, plus how to
+          customize it.</p>
+
+      </div>
+      <div class=font class="col-md-4">
+        <h2>Visualizations</h2>
+        <p>4 thumbnails go here</p>
+      </div>
 
     </div>
-    <div class=font class="col-md-4">
-      <h2>Visualizations</h2>
-      <p>4 thumbnails go here</p>
-    </div>
-
-  </div>
 
 </body>
 
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
+
 </html>
