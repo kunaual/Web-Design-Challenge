@@ -11,11 +11,14 @@
 </head>
 
 <body>
-  <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
     <div class="container">
       <a href="../" class="navbar-brand">Latitude</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- changed aria-controls from navbarNavDropdown -->
+        <!-- changed data-bs-target="#navbarNavDropdown" -->
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -26,6 +29,7 @@
           Plots
         </a>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> -->
           <a class="dropdown-item" href="maxtemp.html">Latitude vs. City Temp graph</a>
           <a class="dropdown-item" href="wind.html">Latitude vs. City Wind graph</a>
           <a class="dropdown-item" href="cloud.html">Latitude vs. City Cloudiness graph</a>
@@ -37,34 +41,34 @@
     <a class="nav-link navbar-brand" href="comp.html">Comparison</a>
     <a class="nav-link navbar-brand" href="data.html">Data</a>
 
-    </ul>
-  </div>
+    <!-- </ul> -->
+  </nav>
 
-      <!-- <div class="collapse navbar-collapse" id="navbarResponsive"> -->
-      <!-- <ul class="navbar-nav"> -->
-      <!-- <ul class="navbar-nav right"> -->
-      <!-- below works, except it's a horizontal rather than vertical
+  <!-- <div class="collapse navbar-collapse" id="navbarResponsive"> -->
+  <!-- <ul class="navbar-nav"> -->
+  <!-- <ul class="navbar-nav right"> -->
+  <!-- below works, except it's a horizontal rather than vertical
             <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Plots <span class="caret"></span></a>
             <li><a tabindex="-1" href="#">wtf</a></li>
             <li><a tabindex="-1" href="#">Another wtf</a></li>
             <li><a tabindex="-1" href="#">Something wtf here</a></li>
           </li> -->
-      <!-- below works as verticl list, works on small screen. but on regular screen it's a floating disembodied list,  -->
-      <!-- <li class="dropdown"> -->
-      <!-- this one sort of works, but fucks up the other element in the list -->
-      <!-- <li class="nav-item dropdown">
+  <!-- below works as verticl list, works on small screen. but on regular screen it's a floating disembodied list,  -->
+  <!-- <li class="dropdown"> -->
+  <!-- this one sort of works, but fucks up the other element in the list -->
+  <!-- <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Plots <span
               class="caret"></span></a> -->
-      <!--     <div class="dropdown-menu " >   show has it visible all the time. aria-labelledby="download"-->
-      <!-- <a class="dropdown-item" href="#">Plot 1</a>
+  <!--     <div class="dropdown-menu " >   show has it visible all the time. aria-labelledby="download"-->
+  <!-- <a class="dropdown-item" href="#">Plot 1</a>
             <a class="dropdown-item" href="#">Plot 2</a>
             <a class="dropdown-item" href="#">Plot 3</a>
             <a class="dropdown-item" href="#">Plot 4</a>
           </div> -->
-      <!-- </li> -->
+  <!-- </li> -->
 
-      <!-- This div for some reason gets everyting to the right where it should be -->
+  <!-- This div for some reason gets everyting to the right where it should be -->
 
   <!--This one ends the header bar -->
 
@@ -112,10 +116,14 @@
 
         <!-- </div>
     <div class="col-md-4"> -->
-        <p>The purpose of this project was to analyze how weather changes with latitude.  To accomplish this we pulled data from OpenWeatherMapAPI for 500 randomly selected cities.We used Matplotlib to pot various aspects of the weather compared to city latitude.   The weather attributes we looked at included: temperature, cloudiness, wind speed, and humidity.  This sit provides the source data and visualizations created as part of the analysis as well as descriptions of any trends and correlations seen in the visualizations.</p>
+        <p>The purpose of this project was to analyze how weather changes with latitude.  To accomplish this we pulled
+          data from OpenWeatherMapAPI for 500 randomly selected cities.We used Matplotlib to pot various aspects of the
+          weather compared to city latitude.   The weather attributes we looked at included: temperature, cloudiness,
+          wind speed, and humidity.  This sit provides the source data and visualizations created as part of the
+          analysis as well as descriptions of any trends and correlations seen in the visualizations.</p>
 
       </div>
-    <!-- </div>
+      <!-- </div>
     <div> -->
       <div class=font class="col-md-4">
         <h2>Visualizations</h2>
