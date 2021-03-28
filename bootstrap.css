@@ -577,6 +577,15 @@ pre code {
   /* aek adding background color */
   background-color: white;
 }
+.smcontWH,
+.smcontWH-fluid,
+.smcontWH-sm,
+.smcontWH-md,
+.smcontWH-lg,
+.smcontWH-xl { 
+  /* aek adding background color */
+  background-color: white;
+}
 
 @media (min-width: 576px) {
   .container, .container-sm {
@@ -631,7 +640,7 @@ pre code {
   position: relative;
   width: 100%;
   padding-right: 15px;
-  padding-left: 15px;
+  padding-left: 15px; 
 }
 
 .col {
