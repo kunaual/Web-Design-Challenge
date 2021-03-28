@@ -4,75 +4,51 @@
 <head>
   <meta charset="UTF-8">
   <title>fuckf</title>
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
-  <link rel="stylesheet" href="bootstrap.css">
-  <!-- "style.css"> -->
+   <link rel="stylesheet" href="bootstrap.css">
+
 </head>
 
 <body>
-
-  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
-    <div class="container">
-      <a href="../" class="navbar-brand">Latitude</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <!-- changed aria-controls from navbarNavDropdown -->
-        <!-- changed data-bs-target="#navbarNavDropdown" -->
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-
-      <div class="dropdown show">
-        <a class="navbar-brand dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          Plots
-        </a>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> -->
-          <a class="dropdown-item" href="maxtemp.html">Latitude vs. City Temp graph</a>
-          <a class="dropdown-item" href="wind.html">Latitude vs. City Wind graph</a>
-          <a class="dropdown-item" href="cloud.html">Latitude vs. City Cloudiness graph</a>
-          <a class="dropdown-item" href="humidity.html">Latitude vs. City Humidity graph</a>
+  <!-- navbar start -->
+  <div class="container">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- changed aria-controls from navbarNavDropdown -->
+          <!-- changed data-bs-target="#navbarNavDropdown" -->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <!-- <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li> -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Plots
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="maxtemp.html">Latitude vs. City Temp graph</a></li>
+                <li><a class="dropdown-item" href="wind.html">Latitude vs. City Wind graph</a></li>
+                <li><a class="dropdown-item" href="cloud.html">Latitude vs. City Cloudiness graph</a></li>
+                <li><a class="dropdown-item" href="humidity.html">Latitude vs. City Humidity graph</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comp.html">Comparison</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="data.html">Data</a>
+            </li>
+          </ul>
         </div>
       </div>
-
-    </div>
-    <a class="nav-link navbar-brand" href="comp.html">Comparison</a>
-    <a class="nav-link navbar-brand" href="data.html">Data</a>
-
-    <!-- </ul> -->
-  </nav>
-
-  <!-- <div class="collapse navbar-collapse" id="navbarResponsive"> -->
-  <!-- <ul class="navbar-nav"> -->
-  <!-- <ul class="navbar-nav right"> -->
-  <!-- below works, except it's a horizontal rather than vertical
-            <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Plots <span class="caret"></span></a>
-            <li><a tabindex="-1" href="#">wtf</a></li>
-            <li><a tabindex="-1" href="#">Another wtf</a></li>
-            <li><a tabindex="-1" href="#">Something wtf here</a></li>
-          </li> -->
-  <!-- below works as verticl list, works on small screen. but on regular screen it's a floating disembodied list,  -->
-  <!-- <li class="dropdown"> -->
-  <!-- this one sort of works, but fucks up the other element in the list -->
-  <!-- <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Plots <span
-              class="caret"></span></a> -->
-  <!--     <div class="dropdown-menu " >   show has it visible all the time. aria-labelledby="download"-->
-  <!-- <a class="dropdown-item" href="#">Plot 1</a>
-            <a class="dropdown-item" href="#">Plot 2</a>
-            <a class="dropdown-item" href="#">Plot 3</a>
-            <a class="dropdown-item" href="#">Plot 4</a>
-          </div> -->
-  <!-- </li> -->
-
-  <!-- This div for some reason gets everyting to the right where it should be -->
-
-  <!--This one ends the header bar -->
-
-  <!-- without the breaks the below items go up under the navbar -->
+    </nav>
+  </div> <!-- end of nav container-->
   <br>
   <br>
   <br>
@@ -139,15 +115,20 @@
 
     </div>
 
-</body>
 
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
 </body>
 
 </html>
