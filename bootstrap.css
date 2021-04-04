@@ -65,11 +65,10 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  /* color: #495057; */
+  color: #495057;
 
   text-align: left;
-  /* background-color: #fff; aek changed background color */
-  background-color: #495057;
+  background-color: #fff;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -562,30 +561,6 @@ pre code {
   margin-left: auto;
 }
 
-/* aek added this */
-.containerWH,
-.containerWH-fluid,
-.containerWH-sm,
-.containerWH-md,
-.containerWH-lg,
-.containerWH-xl { 
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 35px;  
-  margin-right: auto;
-  margin-left: auto;
-  /* aek adding background color */
-  background-color: white;
-}
-.smcontWH,
-.smcontWH-fluid,
-.smcontWH-sm,
-.smcontWH-md,
-.smcontWH-lg,
-.smcontWH-xl { 
-  /* aek adding background color */
-  background-color: white;
-}
 
 @media (min-width: 576px) {
   .container, .container-sm {
