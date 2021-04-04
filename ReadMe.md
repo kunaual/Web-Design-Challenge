@@ -3,6 +3,8 @@
 This project used the saved figures and cities.csv dataset from the Python API project repository ( [here](https://github.com/kunaual/python-api-challenge) )
 
 Files included are:
+* Resources/cities.csv - cities dataset. this data is displayed on data.html
+* Resources/assets - folder containing 6 png files of the graphs displayed throughout this project
 * cloud.html - cloud visualization page
 * comp.htmp - visualization comparison page
 * data.html - page with table of project data
@@ -12,6 +14,8 @@ Files included are:
 * maxtemp.html - temp visualization page
 * navtest.html - test file used to get a working nav bar
 * wind.html - wind visualization page
+* bootstrap.css - standard bootstrap css file
+* latstyle.css - stylesheet containing few customizations for this project
 
 
 The page requrements are listed below:
