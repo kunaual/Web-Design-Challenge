@@ -1,4 +1,4 @@
-  <!-- test file used to get a working navbar-->
+<!-- test file used to get a working navbar-->
 
 <!doctype html>
 <html lang="en">
@@ -21,8 +21,9 @@
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
       <div class="container-fluid">
         <box class="">
-        <a class="navbar-brand" href="index.html">Home</a>
-      </box>
+          <!-- needed to add id b/c doing it as a class...soemthing in bootstrap was overriding it and not changing the font color correctly -->
+          <a class="navbar-brand" id="whitebox" href="index.html">Home</a>
+        </box>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
           aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <!-- changed aria-controls from navbarNavDropdown -->
@@ -30,7 +31,8 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
+          <!-- ml auto moved stuff to right  -->
+          <ul class="navbar-nav ml-auto">
             <!-- <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li> -->
@@ -64,7 +66,7 @@
   <br>
   <br>
 
- <!-- -------------------------------------------------------- -->
+  <!-- -------------------------------------------------------- -->
   <div class="containerWH">
     <!-- page data stuff -->
     <div class="row">
@@ -82,30 +84,51 @@
 
       </div>
 
-      <div class=font class="col-md-4">
+
+
+      <div class="col-md-4">
         <h2>Visualizations</h2>
         <div class="row">
+          <!-- added column here to get 2 picts on same row -->
           <div class="col-md-6">
-            <p>fuckingfuckfuck</p>
+            <a target="_blank" href="maxtemp.html">
+              <img src="Resources/assets/cityLat_vs_MaxTemp.png" class="img-thumbnail" alt="lat vs max temp graph"
+                width="100px" height="100px">
+              <!-- use defined size instead of % -->
+            </a>
+            <!-- </div> -->
 
           </div>
           <div class="col-md-6">
-
-            <p>fuckingfuckfuck</p>
+            <!-- took out row here to get 2 picts on same row -->
+            <!-- <div class="row"> -->
+            <a target="_blank" href="cloud.html">
+              <img src="Resources/assets/cityLat_vs_Cloudiness.png" class="img-thumbnail" alt="lat vs max temp graph"
+                width="100px" height="100px">
+            </a>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6">
-            <p>fuckingfuckfuck</p>
-
-          </div>
-          <div class="col-md-6">
-            <p>fuckingfuckfuck</p>
-
-          </div>
+          <a target="_blank" href="humidity.html">
+            <img src="Resources/assets/cityLat_vs_Humidity.png" class="img-thumbnail" alt="lat vs max temp graph"
+              width="50%">
+          </a>
         </div>
+
+        <div class="row">
+          <a target="_blank" href="wind.html">
+            <img src="Resources/assets/cityLat_vs_Wind.png" class="img-thumbnail" alt="lat vs max temp graph"
+              width="50%">
+
+          </a>
+
+
+        </div>
+
       </div>
     </div>
+</div>
+
 
 
 
