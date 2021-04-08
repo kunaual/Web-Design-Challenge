@@ -12,13 +12,13 @@ Files included are:
 * humidity.html - humidity visualization page
 * index.html - landing page containing project overview
 * maxtemp.html - temp visualization page
-* navtest.html - test file used to get a working nav bar
+* navtest.html - test file used to test nav bar and other page attributes
 * wind.html - wind visualization page
 * bootstrap.css - standard bootstrap css file
 * latstyle.css - stylesheet containing few customizations for this project
 
 
-The page requrements are listed below:
+The page requirements are as follows:
 1. A landing page containing:
 
     * An explanation of the project.
