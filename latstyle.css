@@ -1,41 +1,17 @@
-/* h1 { */
-    /* margin=blank space at the bottom */
-    /* margin-bottom: 80px; */
-    /* Change the size of your font to 60 pixels high. */
-    /* font-size: 60px; */
-    /* change header to cornflower blue. */
-    /* color: cornflowerbluergb(68, 48, 184); */
-    
-
-    /* Align the text to the center of its enclosing element (e.g. div). */
-    /* The background of the heading element will now be black. */
-    /* background-color: grey; */
-  /* }
-  h2 { */
-    /* margin=blank space at the bottom */
-    /* margin-bottom: 60px;
-    color: cornflowerblue
-
-  } */
-  /* .font { font-family: 'Times New Roman', Times, serif;  } */
-
-  /* when taking things from css or wherever. Give them unique names */
-  /* or id */
-  body {
+   body {
     margin: 50;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-  
-    /* text-align: left; */
-    /* background-color: #fff; aek changed background color */
+
+    /* background-color: change background color */
     background-color: #495057;
   }
 
   #whitebox {
     background-color:white;
-    color: black;
+    color: #2FA4E7;
   }
 
   /* adding margin id to try and get some buffer between things */
@@ -43,7 +19,7 @@
     margin-right: 50px;
   }
 
-  /* aek added this */
+  /* creating white container */
 .containerWH,
 .containerWH-fluid,
 .containerWH-sm,
@@ -55,16 +31,15 @@
   padding-left: 35px;  
   margin-right: auto;
   margin-left: auto;
-  /* aek adding background color */
   background-color: white;
 }
 
+/* small white container */
 .smcontWH,
 .smcontWH-fluid,
 .smcontWH-sm,
 .smcontWH-md,
 .smcontWH-lg,
 .smcontWH-xl { 
-  /* aek adding background color */
   background-color: white;
 }
